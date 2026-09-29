@@ -1,5 +1,5 @@
 {
-  "name": "term-chart",
+  "name": "chart-term",
   "version": "1.0.0",
   "description": "High-fidelity inline terminal charts, sparklines, line plots, and bar graphs with Unicode Braille, box-drawing axes, and 24-bit Truecolor gradients across macOS, Linux, Windows, PowerShell, Bash, and Zsh.",
   "keywords": [
@@ -20,12 +20,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/authoritydmc/term-chart.git"
+    "url": "git+https://github.com/authoritydmc/chart-term.git"
   },
   "bugs": {
-    "url": "https://github.com/authoritydmc/term-chart/issues"
+    "url": "https://github.com/authoritydmc/chart-term/issues"
   },
-  "homepage": "https://github.com/authoritydmc/term-chart#readme",
+  "homepage": "https://github.com/authoritydmc/chart-term#readme",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",

@@ -1,14 +1,14 @@
-# term-chart 📊
+# chart-term 📊
 
-[![CI](https://github.com/authoritydmc/term-chart/actions/workflows/ci.yml/badge.svg)](https://github.com/authoritydmc/term-chart/actions/workflows/ci.yml)
-[![npm version](https://img.shields.io/npm/v/term-chart.svg?style=flat&color=brightgreen)](https://www.npmjs.com/package/term-chart)
+[![CI](https://github.com/authoritydmc/chart-term/actions/workflows/ci.yml/badge.svg)](https://github.com/authoritydmc/chart-term/actions/workflows/ci.yml)
+[![npm version](https://img.shields.io/npm/v/chart-term.svg?style=flat&color=brightgreen)](https://www.npmjs.com/package/chart-term)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Node.js](https://img.shields.io/badge/Node.js-%3E%3D18-green.svg)](https://nodejs.org)
 [![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue.svg)](https://www.typescriptlang.org/)
 
 > **High-fidelity inline terminal charts, sparklines, line plots, and bar graphs** with Unicode Braille (2x4 subpixels), box-drawing axes, and 24-bit Truecolor gradients across macOS, Linux, and Windows.
 
-Designed both as an **interactive CLI tool** (`term-chart` / `chartx`) and an **embeddable library** for monitoring scripts, DevOps pipelines, metrics loggers, and CLI dashboards.
+Designed both as an **interactive CLI tool** (`chart-term` / `chartx`) and an **embeddable library** for monitoring scripts, DevOps pipelines, metrics loggers, and CLI dashboards.
 
 ---
 
@@ -29,16 +29,16 @@ Designed both as an **interactive CLI tool** (`term-chart` / `chartx`) and an **
 
 ### Global CLI Tool
 ```bash
-npm install -g term-chart
+npm install -g chart-term
 # or run directly with npx
-npx term-chart 10 25 18 42 30 55
+npx chart-term 10 25 18 42 30 55
 # or using short alias
 npx chartx 10 25 18 42 30 55
 ```
 
 ### In Your Project (Library)
 ```bash
-npm install term-chart
+npm install chart-term
 ```
 
 ---
@@ -75,7 +75,7 @@ seq 1 100 | awk '{print rand()*100}' | chartx --type hist --bins 6 --color magen
 ## 📖 Programmatic Library API (TypeScript & JavaScript)
 
 ```typescript
-import { lineChart, sparkline, barChart, histogram, progressBar } from "term-chart";
+import { lineChart, sparkline, barChart, histogram, progressBar } from "chart-term";
 
 // 1. High-Density Braille Line Plot
 console.log(
@@ -139,8 +139,8 @@ console.log(progressBar(85, 100, { label: "Disk Usage:", color: "green" }));
 ## 🧪 Development & Testing
 
 ```bash
-git clone https://github.com/authoritydmc/term-chart.git
-cd term-chart
+git clone https://github.com/authoritydmc/chart-term.git
+cd chart-term
 npm install
 npm test
 npm run build
