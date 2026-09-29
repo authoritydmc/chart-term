@@ -1,0 +1,70 @@
+{
+  "name": "term-chart",
+  "version": "1.0.0",
+  "description": "High-fidelity inline terminal charts, sparklines, line plots, and bar graphs with Unicode Braille, box-drawing axes, and 24-bit Truecolor gradients across macOS, Linux, Windows, PowerShell, Bash, and Zsh.",
+  "keywords": [
+    "chart",
+    "terminal",
+    "sparkline",
+    "line-chart",
+    "bar-chart",
+    "histogram",
+    "braille",
+    "cli",
+    "data-visualization",
+    "unicode",
+    "truecolor",
+    "ascii-chart"
+  ],
+  "author": "authoritydmc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/authoritydmc/term-chart.git"
+  },
+  "bugs": {
+    "url": "https://github.com/authoritydmc/term-chart/issues"
+  },
+  "homepage": "https://github.com/authoritydmc/term-chart#readme",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "bin": {
+    "term-chart": "./dist/cli.js",
+    "chartx": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "tsx --test src/test/term-chart.test.ts",
+    "lint": "eslint src/ --ext .ts",
+    "prepublishOnly": "npm run build && npm test",
+    "release:patch": "npm version patch && git push origin main --follow-tags",
+    "release:minor": "npm version minor && git push origin main --follow-tags",
+    "release:major": "npm version major && git push origin main --follow-tags"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "tsup": "^8.2.4",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
